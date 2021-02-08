@@ -26,6 +26,7 @@ endif
 		--volume "$(PWD)":/app \
 		--workdir /app \
 		--env GITHUB_TOKEN=$(GITHUB_TOKEN) \
+		--env PREVIOUS_TAG=$(PREVIOUS_TAG) \
 		--env TAG_NAME=$(TAG_NAME) \
 		-u $(CURRENT_UID):$(CURRENT_GID) \
 		gren
